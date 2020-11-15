@@ -1,0 +1,29 @@
+git init 初始化仓库
+git commit --amend -m '修正'
+git commit -am '信息'   直接将文件从工作去提交到版本库
+git add ./
+git status
+
+git rm 文件名  删除文件
+git mv 
+
+git branch  查看所有分支
+git branch -d/-D 分支名  删除分支
+git branch 分支名  创建分支
+git branch 分支名  commit_id  从某个提交创建分支
+git checkout -/分支名  切换分支
+git checkout -- 文件名   丢弃当前工作区的修改（与最新暂存区的比较）
+git checkout commit_id   切换到游离的commit_id分支   可以通过git checkout -b 分支名  创建一个分支保存当前游离的分支
+git log / git log --graph  查看日志
+git reflog  查看操作日志
+git merge 分支名   将此分支合并到当前分支
+git reset --hard HEAD^ 回退到前一个版本   git reset --hard commit_id  回退到指定版本
+git reset --hart HEAD~n  回退到第n个版本
+
+git stash  保存当前修改
+git stash save '修改说明'
+git stash pop  恢复最新的一次保存   同时删除记录
+git stash apply 恢复最新一条  不删除记录
+git stash apply stash@{n}  恢复第n条保存的记录
+git stash drop stash@{n} 手动删除第n条保存记录
+git stash list 查看所有保存的记录
