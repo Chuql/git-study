@@ -27,3 +27,7 @@ git stash apply 恢复最新一条  不删除记录
 git stash apply stash@{n}  恢复第n条保存的记录
 git stash drop stash@{n} 手动删除第n条保存记录
 git stash list 查看所有保存的记录
+
+git remote show  展示所有关联的远程分支
+git remote show origin 展示origin远程分支的详情
+
