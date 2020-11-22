@@ -34,3 +34,12 @@ git remote show origin 展示origin远程分支的详情
 
 分支默认采用同名策略
 
+git checkout -b test origin/master
+git checkout --track origin/master  第一种的特殊情况
+
+
+
+
+
+
+
